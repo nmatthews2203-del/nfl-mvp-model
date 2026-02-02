@@ -21,6 +21,10 @@ End-of-season NFL MVP prediction model using **XGBoost**, with **SHAP explainabi
 ## Tableau dashboard
 🔗 [View the interactive Tableau dashboard](https://public.tableau.com/app/profile/nicholas.matthews8591/viz/MVPPredictionModel/Dashboard1)
 
+## Use of AI Tools
+ChatGPT was used as a development assistant throughout this project to support debugging, code refactoring, feature engineering ideas, and visualization design decisions. All modeling choices, data interpretation, and final implementation decisions were made by the author.
+
+
 ## How to run
 ```bash
 pip install -r requirements.txt
