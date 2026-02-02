@@ -28,3 +28,13 @@ python src/03_join_team_context.py
 python src/04b_make_target.py
 python src/06_train_xgboost.py
 python src/07_pivot_shap.py
+
+## Tableau dashboard
+🔗 [View the interactive Tableau dashboard](https://public.tableau.com/app/profile/nicholas.matthews8591/viz/MVPPredictionModel/Dashboard1)
+
+### What the dashboard shows
+- MVP probability ladder (including 2025 prediction)
+- SHAP-based feature explanations (historical seasons)
+- Passing EPA vs team win percentage context
+- MVP race competitiveness across seasons
+
