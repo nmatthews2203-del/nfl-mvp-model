@@ -8,6 +8,11 @@ End-of-season NFL MVP prediction model using **XGBoost**, with **SHAP explainabi
 - Trains an MVP classifier (XGBoost)
 - Produces MVP probabilities and SHAP explanations for analysis + Tableau
 
+## Key results
+- The model correctly identified the NFL MVP in each historical season from 2010–2024 when ranking candidates by predicted probability.
+- For the 2025 season (no ground-truth MVP available), the model projects Drake Maye as the leading MVP candidate based on end-of-season performance metrics.
+- MVP probabilities in competitive seasons are more evenly distributed, while runaway MVP seasons show dominant single-candidate probabilities.
+
 ## Repository structure
 - `src/` – Python pipeline scripts (numbered in run order)
 - `data/` – Inputs (MVP winners CSV)
@@ -23,7 +28,6 @@ End-of-season NFL MVP prediction model using **XGBoost**, with **SHAP explainabi
 
 ## Use of AI Tools
 ChatGPT was used as a development assistant throughout this project to support debugging, code refactoring, feature engineering ideas, and visualization design decisions. All modeling choices, data interpretation, and final implementation decisions were made by the author.
-
 
 ## How to run
 ```bash
