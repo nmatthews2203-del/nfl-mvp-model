@@ -13,6 +13,20 @@ End-of-season NFL MVP prediction model using **XGBoost**, with **SHAP explainabi
 - For the 2025 season (no ground-truth MVP available), the model projects Drake Maye as the leading MVP candidate based on end-of-season performance metrics.
 - MVP probabilities in competitive seasons are more evenly distributed, while runaway MVP seasons show dominant single-candidate probabilities.
 
+## Model evaluation
+
+### How the model was tested
+The model was trained on historical NFL seasons from 2010–2024. Performance was evaluated by checking whether the player ranked highest by the model in each season matched the actual NFL MVP.
+
+### How performance was measured
+The primary focus was on how well the model ranked MVP candidates by probability, rather than making a single yes/no prediction. This reflects how MVP voting works in practice, where multiple players receive consideration.
+
+### Baseline comparison
+A simpler logistic regression model was used as a baseline. The final XGBoost model produced clearer separation between top candidates and more realistic probability distributions, particularly in competitive MVP races.
+
+### What the results mean
+In historical seasons, the top-ranked candidate aligned with the actual MVP. In seasons with a clear MVP favorite, the model assigned a high probability to one player, while in closer races the probabilities were more evenly distributed.
+
 ## Repository structure
 - `src/` – Python pipeline scripts (numbered in run order)
 - `data/` – Inputs (MVP winners CSV)
