@@ -18,6 +18,9 @@ End-of-season NFL MVP prediction model using **XGBoost**, with **SHAP explainabi
 - `outputs/mvp_predictions_xgb.csv` – MVP probabilities by player-season (includes 2025)
 - `outputs/mvp_shap_long.csv` – SHAP values (historical seasons only)
 
+## Tableau dashboard
+🔗 [View the interactive Tableau dashboard](https://public.tableau.com/app/profile/nicholas.matthews8591/viz/MVPPredictionModel/Dashboard1)
+
 ## How to run
 ```bash
 pip install -r requirements.txt
@@ -28,9 +31,6 @@ python src/03_join_team_context.py
 python src/04b_make_target.py
 python src/06_train_xgboost.py
 python src/07_pivot_shap.py
-
-## Tableau dashboard
-🔗 [View the interactive Tableau dashboard](https://public.tableau.com/app/profile/nicholas.matthews8591/viz/MVPPredictionModel/Dashboard1)
 
 ### What the dashboard shows
 - MVP probability ladder (including 2025 prediction)
